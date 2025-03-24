@@ -1,0 +1,20 @@
+---Data structures and algorithm---
+
+Algorithms-- major keys concepts
+		--input
+		--output
+		--finitenes - a code should terminate after a finite number of steps
+		--definitess - clear and unambigious steps
+		--effectiveness - complexity- the total time and space taken by a code to execute.
+
+Data structures
+		--Linear - sequential data or a data with upper bound and a lower bound
+				length of array - UB-LB+1
+			-stack - data structures using LIFO principles
+				-PUSH(insertion) & POP(deletion)
+				-TOP [top most element]; inital empty stack- TOP = -1; MAXtop - maximum size of stack
+				 PUSH: TOP+1; PUSH(element)
+				 POP: POP(element); TOP-1
+				 Stack overflow - Maxtop == TOP
+			-queue - "	"	"      FIFO principles
+		--Non-linear

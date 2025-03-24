@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>My Timer</title>
+    <meta charset="UTF-8" />
+    <style>
+      .container {
+        border: 2px solid black;
+        width: 200px;
+        margin-left: 40%;
+        margin-top: 13%;
+      }
+      .title-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .my-button {
+        margin: 7px;
+        padding: 7px;
+        background-color: beige;
+        border: none;
+        border-radius: 20%;
+      }
+      .my-button:hover {
+        background-color: rgb(206, 255, 255);
+      }
+      .button-container {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 10px;
+      }
+      h3 {
+        border: 2px solid red;
+        width: 50%;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1>Stop Watch</h1>
+        <h3 id="timer">00 : 00 : 00</h3>
+      </div>
+      <div class="button-container">
+        <button class="my-button" onclick="x()">start</button>
+        <button class="my-button" onclick="y()">stop</button>
+        <button class="my-button" onclick="z()">reset</button>
+      </div>
+    </div>
+    <script>
+      let minutes = 0;
+      let seconds = 0;
+      let milliSec = 0;
+      let intervalId;
+      let flag = true;
+
+      function x() {
+        if(flag) {
+          intervalId = setInterval(() => {
+            milliSec++;
+            if(milliSec >= 1000) {
+              seconds++;
+              milliSec = 0;
+            }
+            if(seconds >= 60){
+              minutes++;
+              seconds = 0;
+            }
+            display();
+          }, 0);
+          flag = !flag;
+          console.log(flag);
+        }
+      }
+
+      function y() {
+        clearInterval(intervalId);
+        flag = !flag;
+        console.log(flag);
+        display();
+      }
+
+      function z() {
+        seconds = 0;
+        minutes = 0;
+        milliSec = 0;
+        display();
+      }
+
+      function display() {
+        formatMinutes = minutes.toString().padStart(2, "0");
+        formatSeconds = seconds.toString().padStart(2, "0");
+        formatMilliSec = (milliSec % 100).toString().padStart(2,"0");
+        document.querySelector(
+          "#timer"
+        ).innerHTML = `${formatMinutes} : ${formatSeconds} : ${formatMilliSec}`;
+      }
+    </script>
+  </body>
+</html>

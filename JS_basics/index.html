@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .center {
+      margin: auto;
+      width: 20%;
+      border: 1px solid #73AD21;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', function () {
+      let menu = document.getElementById('menu');
+      let isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      this.setAttribute('aria-expanded', !isExpanded);
+      menu.hidden = isExpanded; // Show/hide menu
+    });
+  </script>
+</head>
+
+<body>
+  <div class="center" tabindex="0" aria-label="Hello World">
+    <p tabindex="0">Hello World!</p>
+  </div>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <fieldset>
+    <legend>Preferred Contact Method:</legend>
+    <label><input type="radio" name="contact" value="email"> Email</label>
+    <label><input type="radio" name="contact" value="phone"> Phone</label>
+    <label><input type="radio" name="contact" value="tele"> Telephone</label>
+    <label><input type="radio" name="contact" value="post"> Post</label>
+  </fieldset>
+
+  <button aria-expanded="false" id="menuBtn">Menu</button>
+  <ul id="menu" hidden>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+</body>
+
+</html>

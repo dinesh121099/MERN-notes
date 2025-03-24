@@ -1,0 +1,319 @@
+Create a webpage with the following:
+A heading (<h1>)
+A paragraph (<p>)
+An unordered list (<ul>) 
+with three itemsA link (<a>) to another website
+An image (<img>) from an external source
+*
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Home</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Assessment Page</h1>
+    <p>Mirafra webpage</p>
+    <ul class="navi">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://mirafra.com/">Main page</a></li>
+        <li><a href="https://chatgpt.com/">Search</a></li>
+    </ul>
+    <figure>
+    <img src="https://mirafra.com/wp-content/uploads/2023/07/mirafra-logo-hires-1.svg" alt="Mirafra logo" style="width: 30%;">
+    <figcaption>Mirafra Tech. Inc</figcaption>
+    </figure>
+</body>
+
+</html>
+Create a contact form with:
+Name (text input)
+Email (email input)
+Message (textarea)
+Submit button
+*
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Home</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Assessment Page</h1>
+    <p>Mirafra webpage</p>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="E-mail" required>
+        <br>
+        
+        <label for="text">Input message:</label>
+        <input type="text" id="message" name="type message" required>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
+Create a simple webpage that uses semantic HTML elements:
+
+A header with a logo and navigation links A main content section with an article and sidebar A footer with copyright information
+*
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Home</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header style="display: flex; justify-content: space-between;">
+        <img src="https://mirafra.com/wp-content/uploads/2023/07/mirafra-logo-hires-1.svg" alt="logo" style="width: 10%;">
+        <nav>
+            <ul style="display: flex; list-style: none;">
+                <li style="padding-left:1cm"><a href="index.html">Home</a></li>
+                <li style="padding-left:1cm"><a href="https://chatgpt.com/">AI</a></li>
+                <li style="padding-left:1cm"><a href="https://google.co.in">Google</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="display: flex;">
+        <aside class="sidebar" style="padding-right: 1cm;">
+            <ul>
+                <li>The Mystery of the Bermuda Triangle</li>
+                <li>History of the Bermuda Triangle</li>
+                <li>Popular Theories</li>
+                <li>Myths and Legends</li>
+                <li>Scientific Investigations</li>
+                <li>Conclusion</li>
+            </ul>
+        </aside>
+        <div class="content">
+            <h3>The Mystery of the Bermuda Triangle</h3>
+            <p>The Bermuda Triangle, often dubbed the "Devil's Triangle," has intrigued adventurers, scientists, and conspiracy theorists for decades. Stretching between Miami, Bermuda, and Puerto Rico, this area of the Atlantic Ocean has gained notoriety for the mysterious disappearances of ships and aircraft. Let’s delve into the myths, theories, and scientific explanations surrounding this enigmatic region.
+            </p>
+            <h4>History of the Bermuda Triangle</h4>
+            <p>The Bermuda Triangle became widely known in the mid-20th century, although stories of strange occurrences date back much further. One of the first recorded incidents was the disappearance of the USS Cyclops in 1918, a navy cargo ship with over 300 men on board. The ship vanished without a trace after leaving Barbados, and no wreckage was ever found.
+            </p>
+            <br>
+            <p>In 1945, the story gained even more traction when Flight 19, a group of five TBM Avenger torpedo bombers, went missing during a training flight. Despite search efforts, neither the planes nor their crews were recovered. These incidents sparked a flurry of speculation and theories about the region.
+            </p>
+            <h4>Popular Theories</h4>
+            <p>Natural Explanations: Many scientists argue that the Bermuda Triangle's mysterious reputation can be attributed to natural phenomena. For instance, the area is prone to sudden storms and strong currents, which can lead to dangerous conditions for vessels. Additionally, the Gulf Stream, a powerful ocean current, can quickly disperse debris, making it difficult to find wreckage.
+            </p>
+            <p>Methane Hydrates: Some researchers propose that large underwater deposits of methane hydrate could erupt, creating massive bubbles that reduce water density and cause ships to sink. This theory gained traction after researchers discovered craters on the seafloor that could have been caused by methane eruptions.
+            </p>
+            <p>Magnetic Anomalies: The Bermuda Triangle is known for unusual magnetic fields that can interfere with navigational instruments. This could lead to navigational errors and confusion, contributing to the disappearance of vessels and aircraft.
+            </p>
+            <h4>Myths and Legends</h4>
+            <p>The allure of the Bermuda Triangle is further fueled by numerous myths and legends. Some claim that the area is a gateway to another dimension or a site for alien activity. Books, documentaries, and movies have perpetuated these ideas, often blending fact and fiction in ways that capture the imagination.
+            </p>
+            <p>One of the most popular myths is that the Triangle is home to the lost city of Atlantis, with many suggesting that its advanced technology may be responsible for the strange occurrences.
+            </p>
+            <h3>Scientific Investigations</h3>
+            <p>Despite the numerous theories and captivating stories, many experts believe that the Bermuda Triangle is not as mysterious as it seems. The U.S. Board on Geographic Names does not recognize the Bermuda Triangle as an official name, and the U.S. government does not recognize it as a hazard to navigation.
+            </p>
+            <p>
+            Investigative studies have shown that the number of incidents in the Bermuda Triangle is not statistically greater than in any other heavily traveled region of the world. In fact, the frequency of disappearances can be attributed to the high volume of traffic in the area, with many ships and planes passing through the Triangle daily.
+            </p>
+            <h4>Conclusion</h4>
+            <p>The Bermuda Triangle continues to be a source of fascination and speculation. While its reputation for mystery persists, scientific explanations often demystify the phenomena attributed to the area. The combination of natural hazards, human error, and the allure of myth and legend keeps the Bermuda Triangle alive in popular culture. Whether you view it as a real mystery or a product of storytelling, the Triangle remains an intriguing part of maritime lore.
+            </p>
+        </div>
+    </div>
+    <footer style="text-align: center; background-color: black; color: white;">
+        <p>&copy; 2024 Mirafra Tech. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
+
+Create a table for a list of products, showing the product name, price, and quantity.
+*
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Youtube</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <table>
+            <thread>
+                <tr>Product Name</tr>
+                <tr>Price</tr>
+                <tr>Quantity</tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Prod 1</td>
+                    <td>Rs.20</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Prod 2</td>
+                    <td>Rs.30</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Prod 3</td>
+                    <td>Rs.40</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+ 
+This is a required question
+Embed a YouTube video on your webpage using an <iframe>.Include an audio player using the <audio> tag.
+*
+ 
+Write a script that declares variables of different data types (string, number, boolean, object) and logs them to the console.
+*
+let stRing="dinesh";
+let inTeger=100;
+let booLean= true;
+const Obj={
+    compName: "Mirafra",
+    compLoc: "Banglore"
+};
+console.log(stRing, inTeger, booLean, Obj.compName, Obj.compLoc)
+
+Write a function that checks if a number is even or odd.Create a program that prints numbers from 1 to 50 but skips numbers divisible by 5.
+*
+// function to find weather the number is odd or even
+function oddEven(num){
+    let status= num%2==0? 'number is even' : 'number is odd';
+    console.log(status);
+}
+oddEven(40);
+
+//for printing 1 to 50 by omitting numbers divisible by 5
+for(let num=1;num<=50;num++){
+    if(num%5!=0){
+        console.log(num);
+    }
+}
+Write a function that takes two numbers as arguments and returns their product.Create a function that takes a string and returns its length.
+*
+// Function to return the product of two numbers
+function ProD(a,b){
+    return a*b;
+}
+console.log(ProD(2,3));
+
+// Function to log the length of a string passed as a argument
+function strLen(str){
+    let counter=0;
+    for(let i=0;str[i]!=null;i++){
+        counter++;
+    }
+    console.log(counter);
+}
+strLen("dinesh np");
+Write an arrow function that divides two numbers.Use let and const to declare variables inside a block and log them to the console.Create a message using template literals that includes a name and age.
+*
+// Arrow function to divide
+const divide=(a,b) => {return a/b};
+console.log(divide(50,5));
+// Let and Const in block scope
+{
+    let a=10;
+    const b=20;
+    console.log(a,b);
+}
+// Using template literals
+const Name = "Dinesh";
+const age = 25;
+
+const message = `Hello, my name is ${Name} and I am ${age} years old.`;
+console.log(message);
+Given the object { name: 'Alice', age: 25, city: 'London' }, use destructuring to extract and print the name and age.
+*
+const obj= { 'name': 'Alice', 'age': 25, 'city': 'London' };
+//destructuring method
+const { name:personName, age:personAge }=obj;
+console.log(personName, personAge);
+Write a function that uses the rest operator to accept any number of arguments and returns their product.Use the spread operator to copy an object {a: 1, b: 2} into a new object.
+*
+// Using a rest operator to pass any number of args
+function prod(...a){
+    let ans=1;
+    for(i=0;i<a.length;i++){
+        ans=ans*a[i];
+    }
+    return ans;
+}
+console.log(prod(10,20,30,40));
+
+// Using spread operator to copy obj1 Key:Values to obj 2
+const obj1={
+    'a':1,
+    'b':2
+};
+const obj2={...obj1};
+console.log(obj2);
+Create a class Person with properties firstName and lastName and a method fullName() that returns the full name.Create two instances of the Person class and call their fullName() methods.
+*
+class Person{
+    constructor(fName,lName){
+        this.firstName=fName;
+        this.lastName=lName;
+    }
+    fullName(){
+        return `The fullname is: ${this.firstName} ${this.lastName}`;
+    }
+}
+const person1=new Person('Dinesh','N P');
+console.log(person1.fullName());
+const person2= new Person('Mirafra','technologies');
+console.log(person2.fullName());
+Create a base class Vehicle with a method move() that logs "The vehicle is moving."Create a subclass Car that inherits from Vehicle and adds a method honk() that logs "The car honks."Create an instance of Car and call both methods.
+*
+class Vechile{
+    move(){
+        console.log('The vechile is moving');
+    }
+}
+class Car extends Vechile{
+    honk(){
+        console.log('The car honks');
+    }
+}
+const car1=new Car; //Instance created
+car1.move();car1.honk();
+
+Create a constructor function Dog that takes in breed and age as parameters and initializes them. Add a method bark() that logs "Woof!".Instantiate two different Dog objects and call their bark() methods.
+*
+lass Dog{
+    constructor(breed,age){
+        this.breedName=breed;
+        this.dogAge=age;
+    }
+    bark(){
+        console.log("Woof!");
+    }
+}
+const dog1=new Dog('Lab',9);
+dog1.bark();
+const dog2=new Dog('Dash',8);
+dog2.bark();
+
+
+Add a static method info() to the Person class that logs "This is a person class."
+*
+class Person{
+    static info(){
+        console.log("This is a person class");
+    }
+}
+Person.info();

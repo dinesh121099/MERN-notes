@@ -1,0 +1,16 @@
+<!DOCTYPE html> why ! is used?
+    - The ! in <!DOCTYPE> indicates that this is a declaration and not an HTML tag.
+    
+what is encoding? eg: charset='UTF-8'
+unicode-bidi:isolate; ???
+how the parameters of functions are allocated or assigned as? (are they variables)
+what is the use of anonymous function?
+write a code of changing the behaviour of a function?
+what is name="viewport"  and initial-scale=1"?
+calculation of 'auto' in width?
+
+---Tags has "attributes". eg; name,class,id, style.---
+
+use grid in mui for card-list 
+use card from mui
+search text feild from ant-d

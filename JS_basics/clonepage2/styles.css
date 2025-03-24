@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-bottom: 2px solid #ddd;
+}
+.navbar .navbar-sec1, .navbar-sec2{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #e62b1e;
+}
+.navbar .logo-desc{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #383838;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 0 10px;
+}
+
+.search-login input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-login button {
+    background-color: #e62b1e;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    gap: 20px;
+}
+
+.featured article {
+    flex: 1;
+    max-width: 600px;
+}
+
+.featured h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.featured p {
+    font-size: 14px;
+    color: #666;
+}
+
+.featured img {
+    width: 570px;
+    height: auto;
+    border-radius: 0px;
+}
+
+hr{
+    width: 95%;
+}
+.discover{
+    padding: 5px;
+    padding-left: 20px;
+    display: flex;
+    background-color: black;
+}
+.discover h2{
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: 1000;
+    color: #f9f9f9;
+}
+.discover .categories{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    gap: 20px;
+}
+.discover .categories button{
+    padding: 10px 20px 10px 20px;
+    background-color: #4D4D4D;
+    color: white;
+}
+.recommended, .psychology, .trending-ideas, .climate-change, .podcasts, .newsletters {
+    padding: 30px;
+    background-color: white;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}

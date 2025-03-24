@@ -1,0 +1,27 @@
+---API---
+
+- API standards
+
+- API producers- expose their business as API provider, through an API documentation.
+- API consumer
+
+- API request - end point: URL
+		end point methods: CRUD -> |GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS|
+		request header
+		request body
+- API response - Status code: 200 series,300 series, 400 series, 500 series.
+		 Response head
+		 Response body
+		 Error message
+
+100- Information responses
+200- Success responses
+300- Redirection errors
+400- Client side or Consumer side errors
+500- Server side or Producer side errors
+
+- Authentication
+	- JWT auth using JWT tokens
+	- OAuth web eg: sign in with google
+
+- Authorisation

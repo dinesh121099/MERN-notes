@@ -1,0 +1,64 @@
+<---Hoisting--->
+- var datatype can be hoisted.
+  var datatype is also global scoped.
+  Hoisting means it can be used before declaration. But needs to be initialized before use
+	- x=10;					|- console.log(x);
+	  console.log(x);			|  var x=10;       //output: undefined
+	  var x;          //output: 10  	|
+
+
+<---Difference between var or (let and const - ES6)--->
+- A variable of "var" can be redeclared and reassigned.
+	- is hoisted with the 'undefined' placeholder.
+- A variable of "let" cannot be redeclared and can be reassigned. It is "block scoped".
+	- is hoisted with the 'undefined' placeholder but placed in the temporal dead zone, thus cannot be accessed before it is initialized(throws "Reference error").
+- A variable of "const" cannot be redeclared and reassigned. It is "block scoped". 
+	- is hoisted with the 'undefined' placeholder, placed in temporal dead zone until initialized. Any calls before declaration throws "Reference error".
+	- it should be assigned a value at the place where it is declared, if not it throws a "Syntax error".
+	- trying to redeclare also throws a "Syntax error". 
+
+
+
+<---Scope chain--->
+- It is the series of lexical environments which defines or determines how a variable searches for its value in its lexical environment. Each function creates a execution context which is enclosed as a closure, which is linked to its outer lexical environment.
+
+ 
+
+<---Objects--->
+- objects are mutable.
+- if suppose, 'person' is an object; 
+  const x = person; //will not create a copy of person to x, but the variable x and person will hold the reference(shared reference) of person. Any changes in 
+  either x or person will create changes in main memory of the object.
+
+
+
+<---Call stack--->
+   - A stack is where global execution context and local execution context is pushed and popped (using LIFO principle).
+
+
+
+<---Execution context--->
+- When a JS code is executed the following things are created default by the V8 engine in browser.
+   - Global execution context,
+   - Window object  - 'this' pointing to the window object,
+	when ever we create a variable or a function, those gets attached to the window object. i.e., 
+   - Local execution context, for each function.
+
+- Execution context happens in 2 phases:
+	-Memory creation phase - memory space AKA "variable environment" and "reference to lexical environment" is created(in case of GEC this reference 	 points to 'null'),
+	-Code execution phase.
+
+
+
+<---Closure--->
+
+
+
+
+<---'This' keyword--->
+- In global space, this points to the window object.
+- Inside a function - 'this' is undefined
+  - In non-strict mode - 'this substitution' happens.
+  - In strict mode - 'this substitution' does not happen, thus it is undefined.
+- In strict mode: - Inside a object method, 'this' refers to the object itself
+		  - Arrow functions do not have its 'this' binding, it takes the value of the enclosing lexical environment

@@ -1,38 +1,39 @@
 import React from "react";
+import "./table.css";
 
 function Table() {
     
   const fruits = [
     {
       id: 0,
-      name: "apple",
+      name: "Apple",
       stock: "IN",
     },
     {
       id: 1,
-      name: "banana",
+      name: "Banana",
       stock: "IN",
     },
     {
       id: 2,
-      name: "pears",
+      name: "Pears",
       stock: "OUT",
     },
     {
       id: 3,
-      name: "plum",
+      name: "Plum",
       stock: "OUT",
     },
     {
       id: 4,
-      name: "orange",
+      name: "Orange",
       stock: "IN",
     },
   ];
 
   return (
     <>
-      <table border={1}>
+      <table border = "1">
         <thead>
           <tr key="Head">
             <th>ID</th>
@@ -45,10 +46,21 @@ function Table() {
               <tr key={ele.id} >
                 <td>{ele.id}</td>
                 <td>{ele.name}</td>
-                <td style ={{ backgroundColor: ele.stock == "IN" ? "green" : "red"}}>{ele.stock}</td>
+                <td className = {ele.stock == "IN" ? "green" : "red"}>{ele.stock}</td>
               </tr>
         ))}
         </tbody>
+        {/* <tbody>
+          {fruits
+          .filter((ele) => ele.stock == "IN")
+          .map((ele) => (
+            <tr key = {ele.id}>
+              <td>{ele.id}</td>
+              <td>{ele.name}</td>
+              <td className = {ele.stock == "IN" ? "green" : "red"}>{ele.stock}</td>
+            </tr>
+          ))}
+        </tbody> */}
       </table>
     </>
   );

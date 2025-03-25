@@ -1,39 +1,24 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./table.css";
 
-function Table() {
-    
-  const fruits = [
-    {
-      id: 0,
-      name: "Apple",
-      stock: "IN",
-    },
-    {
-      id: 1,
-      name: "Banana",
-      stock: "IN",
-    },
-    {
-      id: 2,
-      name: "Pears",
-      stock: "OUT",
-    },
-    {
-      id: 3,
-      name: "Plum",
-      stock: "OUT",
-    },
-    {
-      id: 4,
-      name: "Orange",
-      stock: "IN",
-    },
-  ];
+function Table({ fruits }) {
+  const [fruitsList, setfruitsList] = useState(fruits);
+
+  useEffect(() => {
+    setfruitsList(fruits)
+  }, [fruits]);
+
+  function handlechecks(id) {
+    setfruitsList((prevList) =>
+      prevList.map((ele) =>
+        ele.id == id ? { ...ele, stock: ele.stock == "IN" ? "OUT" : "IN" } : ele
+      )
+    );
+  }
 
   return (
     <>
-      <table border = "1">
+      <table border="1">
         <thead>
           <tr key="Head">
             <th>ID</th>
@@ -42,13 +27,22 @@ function Table() {
           </tr>
         </thead>
         <tbody>
-        {fruits.map((ele) => (
-              <tr key={ele.id} >
-                <td>{ele.id}</td>
-                <td>{ele.name}</td>
-                <td className = {ele.stock == "IN" ? "green" : "red"}>{ele.stock}</td>
-              </tr>
-        ))}
+          {fruitsList.map((ele) => (
+            <tr key={ele.id}>
+              <td>{ele.id}</td>
+              <td>{ele.name}</td>
+              <td className={ele.stock == "IN" ? "green" : "red"}>
+                {ele.stock}
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  checked={ele.stock == "IN"}
+                  onChange={() => handlechecks(ele.id)}
+                ></input>
+              </td>
+            </tr>
+          ))}
         </tbody>
         {/* <tbody>
           {fruits
@@ -57,7 +51,7 @@ function Table() {
             <tr key = {ele.id}>
               <td>{ele.id}</td>
               <td>{ele.name}</td>
-              <td className = {ele.stock == "IN" ? "green" : "red"}>{ele.stock}</td>
+              <td>{ele.stock}</td>
             </tr>
           ))}
         </tbody> */}

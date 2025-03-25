@@ -4,12 +4,12 @@ import Accordion from "./components/Accordian/accordian.jsx";
 import { lazy, Suspense, useEffect, useState } from "react";
 import Table from "./components/table/table.jsx";
 import axios from "axios";
-
 const LazyComponent = lazy(() => import("./components/Carousal/carousal.jsx"));
 
 function App() {
   const [imgList, setimgList] = useState([]);
   const [list, setlist] = useState([]);
+  const [fruitsList, setfruitsList] = useState([]);
   const endpoint = "https://my-json-server.typicode.com/dinesh121099/Db/db";
 
   function api(endpoint) {
@@ -18,6 +18,7 @@ function App() {
       .then(({data}) => {
         setimgList(data.imgList);
         setlist(data.list);
+        setfruitsList(data.fruits);
       })
       .catch((err) => console.error(err.response?.status, err.message));
   }
@@ -34,9 +35,8 @@ function App() {
         <LazyComponent imgList={imgList} />
       </Suspense>
       {/* <Carousal imgList={imgList} /> */}
-      <br />
 
-      <Table />
+      <Table fruits = {fruitsList}/>
     </>
   );
 }
